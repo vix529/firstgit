@@ -1,0 +1,14 @@
+from random import randint
+from time import sleep
+
+def dice_game():
+	answer = raw_input("Do you wish to roll the dice? y/n")
+	if answer == "y":
+		sleep(1)
+		roll_dice()
+	else:	
+		dice_game()
+		
+def roll_dice():
+	print randint(1,6)
+	
